@@ -1,0 +1,89 @@
+{
+    "bot_settings": {
+        "premium_flags": {
+            "1": {
+                "char": "\ud83c\uddfa\ud83c\uddf8",
+                "iso": "US",
+                "name": "United States",
+                "id": "5913463998522592692"
+            },
+            "880": {
+                "char": "\ud83c\udde7\ud83c\udde9",
+                "iso": "BD",
+                "name": "Bangladesh",
+                "id": "5911365056594973179"
+            },
+            "91": {
+                "char": "\ud83c\uddee\ud83c\uddf3",
+                "iso": "IN",
+                "name": "India",
+                "id": "5913754823643107921"
+            },
+            "92": {
+                "char": "\ud83c\uddf5\ud83c\uddf0",
+                "iso": "PK",
+                "name": "Pakistan",
+                "id": "5913705895375672082"
+            },
+            "44": {
+                "char": "\ud83c\uddec\ud83c\udde7",
+                "iso": "GB",
+                "name": "United Kingdom",
+                "id": "5913443365499703513"
+            }
+        },
+        "premium_apps": {
+            "FACEBOOK": {
+                "char": "\ud83d\udeab",
+                "id": "5334807341109908955",
+                "name": "Facebook"
+            },
+            "WHATSAPP": {
+                "char": "\ud83d\udeab",
+                "id": "5334759662677957452",
+                "name": "WhatsApp"
+            }
+        },
+        "custom_messages": {
+            "start": {
+                "text": "\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n       \ud83d\udcca OXYGEN NUMBER BOT\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\n\ud83d\ude80 Welcome to Oxygen Number Bot\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\u2705 Choose an option below\nto continue using the bot.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udc8e Oxygen OTP Service",
+                "buttons": []
+            },
+            "get_number": {
+                "text": "<tg-emoji emoji-id=\"5352922460897452503\">\ud83d\udccd</tg-emoji> Select a service:",
+                "buttons": []
+            },
+            "select_country": {
+                "text": "\ud83d\udccc Select a country for {service}:",
+                "buttons": []
+            },
+            "search_number": {
+                "text": "\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n     \ud83d\udd0d <b>SEARCH NUMBER</b>\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\n\u2705 Enter 3 to 9 digits  \nto search for a number.\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udcdd Example:\n\u27a5 880\n\u27a5 9227373\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd0d Fast Number Lookup System",
+                "buttons": []
+            },
+            "traffic": {
+                "text": "<tg-emoji emoji-id=\"5352877703043258544\">\ud83d\udcca</tg-emoji> <b>Traffic Overview</b>\n\n<tg-emoji emoji-id=\"5352694861990501856\">\u2705</tg-emoji> Available Numbers: {avail}\n<tg-emoji emoji-id=\"5352597830089347330\">\ud83d\ude80</tg-emoji> Assigned Numbers: {assigned}",
+                "buttons": []
+            },
+            "refer": {
+                "text": "\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n\u00ab <tg-emoji emoji-id=\"5420396762189831222\">\ud83c\udf81</tg-emoji> REFER & EARN \u00bb\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n<tg-emoji emoji-id=\"5420517437885943844\">\ud83d\udd17</tg-emoji> YOUR LINK:\n<code>{ref_link}</code>\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n<tg-emoji emoji-id=\"5352861489541714456\">\ud83d\udc64</tg-emoji> TOTAL REFERS: <b>{total_ref}</b>\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n<tg-emoji emoji-id=\"5348469219761626211\">\ud83d\udcb8</tg-emoji> PER REFER: <b>{ref_reward} TK</b>\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796",
+                "buttons": []
+            },
+            "withdrawal": {
+                "text": "\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n\u300a \ud83d\ude12 WITHDRAWAL \u300b\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n\ud83d\udc4b Total Otp: {total_otp}\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n\ud83e\udec2 Total Reffer :{total_ref}\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n\ud83d\udcc5 BALANCE: {bal}\u09f3\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\n\ud83d\udd10 MINIMUM: {min_w} \u09f3\n\u2796\u2796\u2796\u2796\u2796\u2796\u2796\nSELECT METHOD:",
+                "buttons": []
+            },
+            "support": {
+                "text": "<tg-emoji emoji-id=\"5337302974806922068\">\ud83d\udcac</tg-emoji> Contact us for any help:",
+                "buttons": []
+            }
+        }
+    },
+    "total_assigned_stats": 0,
+    "recent_traffic": [],
+    "stex_assigned_numbers": {},
+    "voltx_assigned_numbers": {},
+    "processed_otps": [],
+    "user_cache": {},
+    "pending_withdrawals": {}
+}
