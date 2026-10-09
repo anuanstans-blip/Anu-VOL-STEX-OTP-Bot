@@ -87,7 +87,7 @@ GLOBAL_BODY_EMOJIS = {
 }
 
 DEFAULT_CUSTOM_MESSAGES = {
-    "start": {"text": "╔═══════════╗\n       📊 ANU NUMBER BOT\n╚═══════════╝\n🚀 Welcome to Oxygen Number Bot\n━━━━━━━━━━━━\n✅ Choose an option below\nto continue using the bot.\n━━━━━━━━━━━━\n💎 Oxygen OTP Service", "buttons": []},
+    "start": {"text": "╔═══════════╗\n       📊 ANU NUMBER BOT\n╚═══════════╝\n🚀 Welcome to Anu Number Bot\n━━━━━━━━━━━━\n✅ Choose an option below\nto continue using the bot.\n━━━━━━━━━━━━\n💎 Anu translate from the screen. OTP Service", "buttons": []},
     "get_number": {"text": f"{PEM['pin']} Select a service:", "buttons": []},
     "select_country": {"text": f"📌 Select a country for {{service}}:", "buttons": []}, 
     "search_number": {"text": "╔═══════════╗\n     🔍 <b>SEARCH NUMBER</b>\n╚═══════════╝\n✅ Enter 3 to 9 digits  \nto search for a number.\n━━━━━━━━━━━━━\n📝 Example:\n➥ 880\n➥ 9227373\n━━━━━━━━━━━━━\n🔍 Fast Number Lookup System", "buttons": []},
@@ -129,7 +129,7 @@ except Exception as e:
 
 bot_settings = {
     "admins": [OWNER_ID],
-    "bot_name": "Oxygen Number Bot",
+    "bot_name": "Anu Number Bot",
     "fw_groups": [], 
     "otp_link": "https://t.me/your_otp_group",
     "withdraw_on": True,
@@ -140,7 +140,7 @@ bot_settings = {
     "num_req": 3,
     "num_share": 1, 
     "support_link": "http://t.me/Anstans",
-    "w_methods": ["bKash", "Nagad"],
+    "w_methods": ["Binance", "Nagad"],
     "w_group": "", 
     "method_buttons": [],
     "fake_otp_on": False,
@@ -755,7 +755,7 @@ def system_settings_keyboard():
     return {"inline_keyboard": [
         [{"text": "StexSMS", "icon_custom_emoji_id": "5336972142066047577", "callback_data": "stex_control", "style": "success"},
          {"text": "Voltexotp", "icon_custom_emoji_id": "5336972142066047577", "callback_data": "voltx_control", "style": "primary"}],
-        [{"text": "Oxygen Force Join", "icon_custom_emoji_id": "5420517437885943844", "callback_data": "manage_fj", "style": "primary"},
+        [{"text": "Anu Force Join", "icon_custom_emoji_id": "5420517437885943844", "callback_data": "manage_fj", "style": "primary"},
          {"text": "Admin Management", "icon_custom_emoji_id": "5420145051336485498", "callback_data": "manage_admins", "style": "danger"}],
         [{"text": "OTP Group", "icon_custom_emoji_id": "5190447043545438788", "callback_data": "manage_otp_groups", "style": "danger"},
          {"text": "User Setting", "icon_custom_emoji_id": "5193063022226086560", "callback_data": "user_management", "style": "primary"}], 
@@ -954,7 +954,7 @@ def build_traffic_ui():
             
     txt = render_body_text(txt)
     kb.append([{"text": "Refresh", "icon_custom_emoji_id": "5465368548702446780", "callback_data": "refresh_traffic", "style": "primary"}])
-    kb.append([{"text": "Developer", "icon_custom_emoji_id": "5971831809506282660", "url": "http://t.me/Zynex_Developer", "style": "success"}])
+    kb.append([{"text": "Developer", "icon_custom_emoji_id": "5971831809506282660", "url": "http://t.me/Anstans", "style": "success"}])
     
     return txt, {"inline_keyboard": kb}
 
@@ -1766,8 +1766,7 @@ Get OTP codes instantly using virtual phone numbers — fast, reliable, global.
         
         refer_txt = f"""<tg-emoji emoji-id="5420145051336485498">👥</tg-emoji> <b>Refer & Earn</b>
 ───────────────
-<tg-emoji emoji-id="5247087775164932249">🛍</tg-emoji> আপনার বন্ধুদের এই লিংক দিয়ে ইনভাইট করুন।
-ওরা bot ব্যবহার করে যা income করবে তার 5% কমিশন আপনি সরাসরি আপনার ব্যালেন্সে পাবেন — লাইফটাইম!
+<tg-emoji emoji-id="5247087775164932249">🛍</tg-emoji> Invite your friends using this link. You will receive a 5% lifetime commission directly in your balance from whatever they earn using the bot!
 
 <tg-emoji emoji-id="6158914627800404063">💻</tg-emoji> <b>Total Referred:</b> {total_refs}
 <tg-emoji emoji-id="5256050517213211219">💳</tg-emoji> <b>Total Referral Earning:</b> {total_earned:.2f} TK
@@ -1829,7 +1828,7 @@ Get OTP codes instantly using virtual phone numbers — fast, reliable, global.
         txt = render_body_text(raw_txt)
         
         kb = [
-            [{"text": "Contact Admin", "icon_custom_emoji_id": "5337302974806922068", "url": bot_settings["support_link"], "style": "primary"}]
+            [{"text": "Contact Admin", "icon_custom_emoji_id": "5337302974806922068", "url": bot_settings["t.me/Anstans"], "style": "primary"}]
         ]
         
         for btn in bot_settings.get("method_buttons", []):
@@ -2163,7 +2162,7 @@ def handle_callback(call):
 
     elif data == "add_single_emoji":
         user_states[chat_id] = "wait_for_emoji_extract"
-        edit_message(chat_id, msg_id, render_body_text("📝 যেকোনো একটি Premium Emoji সেন্ড করুন (যেমন: 🇧🇩 বা 🚫):"), reply_markup={"inline_keyboard": [[{"text": "Cancel", "callback_data": "manage_emojis"}]]})
+        edit_message(chat_id, msg_id, render_body_text("Any send one Premium Emoji (e.g.: 🇧🇩 or 🚫):"), reply_markup={"inline_keyboard": [[{"text": "Cancel", "callback_data": "manage_emojis"}]]})
 
     elif data == "dl_flags_txt":
         answer_callback(call["id"], "This functionality is currently unavailable.", show_alert=True)
